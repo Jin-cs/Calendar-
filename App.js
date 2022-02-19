@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Image, ScrollView, TextInput ,Button} from 'react-native';
-import { Calendar }from 'react-calendar';
+import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 
 
 
@@ -10,7 +10,11 @@ const App = () => {
  const [num, setNum] = useState(0);
  const [value, onChange] = useState(new Date());
  return (
- <h1>Hello</h1>
+    <View>
+        <Calendar/>
+        <Text>Hello</Text>
+        <Text>Hello</Text>
+    </View>
 );
 }
 export default App;
